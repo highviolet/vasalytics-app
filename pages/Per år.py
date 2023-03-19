@@ -168,6 +168,7 @@ def mean_split_per_start_group(df: pd.DataFrame):
 
 
 def render_page():
+    st.set_page_config(layout="wide")
     with st.sidebar:
         year = st.selectbox("År", options=utils.get_years())
 
