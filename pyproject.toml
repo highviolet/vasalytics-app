@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "vasalytics-app"
+version = "0.1.0"
+authors = []
+description = ""
+readme = "README.md"
+packages = [{include = "vasalytics_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.20.0"
+plost = "^0.2.5"
+watchdog = "^2.3.1"
+altair = "^4.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.0"
+mypy = "^1.1.1"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
